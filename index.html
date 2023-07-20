@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
+  </head>
+  <body
+    class="flex justify-center items-center inset-0 h-[100vh] min-[0px]:max-lg:h-full"
+  >
+    <main
+      class="relative before:w-full before:h-full before:absolute before:top-0 before:left-0 before:shadow-spread before:animate-fadeIn min-[0px]:max-lg:my-8"
+      style="width: 90vw; height: 90%"
+    >
+      <div
+        id="info"
+        class="active justify-around flex-1 h-full min-[0px]:max-lg:flex-col"
+      >
+        <aside
+          class="flex justify-center items-center flex-1 min-[0px]:max-lg:order-2"
+        >
+          <ul
+            class="[&>li]:mb-24 [&>li]:min-[0px]:max-lg:mb-16 [&_*]:min-[0px]:max-lg:text-center"
+          >
+            <li class="animate-slideUp opacity-0">
+              <span class="block text-sm text-gray-600">Birthday</span>
+              <span>10 - Apr, 2006</span>
+            </li>
+            <li class="animate-slideUp opacity-0">
+              <span class="block text-sm text-gray-600">Languages</span>
+              <span class="block">English</span>
+              <span>Urdu</span>
+            </li>
+            <li class="animate-slideUp opacity-0">
+              <span class="block text-sm text-gray-600">Education</span>
+              <span>The Millenium Universal College</span>
+            </li>
+            <li class="animate-slideUp opacity-0">
+              <span class="block text-sm text-gray-600">Location</span>
+              <span>
+                <svg
+                  fill="#000000"
+                  viewBox="0 0 395.71 395.71"
+                  class="h-4 w-4 inline-block"
+                  style="transform: translateY(-2px)"
+                >
+                  <g>
+                    <path
+                      d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+		c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+		C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+		c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z"
+                    />
+                  </g>
+                </svg>
+                Gujranwala, Pakistan</span
+              >
+            </li>
+          </ul>
+        </aside>
+        <section
+          class="flex justify-around items-center flex-col flex-1 min-[0px]:max-lg:mb-16"
+        >
+          <img
+            src="assets/dp.jpg"
+            alt=""
+            class="max-w-md max-h-[31rem] mt-6 outline outline-1 outline-offset-[1rem] outline-slate-300 animate-fadeIn min-[0px]:max-lg:w-[15rem] min-[0px]:max-lg:mt-8 min-[0px]:max-lg:mb-8 min-[0px]:max-lg:order-2 min-[768px]:max-lg:w-[17.5rem]"
+            style="border-radius: 11rem"
+            draggable="false"
+          />
+          <span class="animate-slideUp opacity-0 min-[0px]:max-lg:order-2">
+            <h1 class="text-3xl text-center">Hammad Ahmed</h1>
+            <h2 class="italic text-center text-gray-500">
+              Aspiring CS Engineer
+            </h2>
+          </span>
+          <nav
+            id="mainNav"
+            class="w-[95%] opacity-0 animate-slideUp min-[0px]:max-lg:order-1 min-[0px]:max-lg:mt-4 min-[768px]:max-lg:w-[50%] sm:max-md:w-[60%]"
+          >
+            <ul class="flex justify-around items-center">
+              <li
+                class="active inline-block text-gray-600 cursor-pointer relative before:bg-gray-500 before:w-full before:h-px before:absolute before:bottom-0 before:origin-center"
+                onclick="activateTab('info')"
+              >
+                Info
+              </li>
+              <li
+                class="inline-block text-gray-600 cursor-pointer relative before:bg-gray-500 before:w-full before:h-px before:absolute before:bottom-0 before:origin-center"
+                onclick="activateTab('grades')"
+              >
+                Grades
+              </li>
+              <li
+                class="inline-block text-gray-600 cursor-pointer relative before:bg-gray-500 before:w-full before:h-px before:absolute before:bottom-0 before:origin-center"
+                onclick="activateTab('extracurriculars')"
+              >
+                Extracurriculars
+              </li>
+              <li
+                class="inline-block text-gray-600 cursor-pointer relative before:bg-gray-500 before:w-full before:h-px before:absolute before:bottom-0 before:origin-center"
+                onclick="activateTab('hobbies')"
+              >
+                Hobbies
+              </li>
+            </ul>
+          </nav>
+        </section>
+        <aside
+          class="flex justify-center items-center flex-1 min-[0px]:max-lg:order-2"
+        >
+          <ul
+            class="[&>li]:mb-24 [&>li]:min-[0px]:max-lg:mb-16 [&_*]:min-[0px]:max-lg:text-center"
+          >
+            <li
+              class="[&]:text-right animate-slideUp opacity-0 [&]:min-[0px]:max-lg:text-left"
+            >
+              <span class="block text-sm text-gray-600">Website</span>
+              <a href="https://wiredwizards.wixsite.com/site">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  style="display: inline; transform: translateY(-2px)"
+                >
+                  <path
+                    fill="#0167ad"
+                    d="M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-1.311 1.311-3.44 1.3-4.74 0-.303-.303-.564-.68-.727-1.051l-2.246 2.245c.236.358.481.667.796.982.812.812 1.846 1.417 3.036 1.704 1.542.371 3.194.166 4.613-.617.518-.286 1.005-.648 1.444-1.087l4.304-4.305c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z"
+                  />
+                </svg>
+                <span style="color: #0167ad">Wired Wizards</span>
+              </a>
+            </li>
+            <li
+              class="[&]:text-right animate-slideUp opacity-0 [&]:min-[0px]:max-lg:text-left"
+            >
+              <span class="block text-sm text-gray-600">Email</span>
+              <a href="mailto:hammadzaigham05@gmail.com">
+                <svg
+                  class="inline-block"
+                  height="16px"
+                  width="16px"
+                  viewBox="0 0 512 512"
+                  style="transform: translateY(-2px)"
+                >
+                  <g>
+                    <path
+                      d="M67,148.7c11,5.8,163.8,89.1,169.5,92.1c5.7,3,11.5,4.4,20.5,4.4c9,0,14.8-1.4,20.5-4.4c5.7-3,158.5-86.3,169.5-92.1   c4.1-2.1,11-5.9,12.5-10.2c2.6-7.6-0.2-10.5-11.3-10.5H257H65.8c-11.1,0-13.9,3-11.3,10.5C56,142.9,62.9,146.6,67,148.7z"
+                    />
+                    <path
+                      d="M455.7,153.2c-8.2,4.2-81.8,56.6-130.5,88.1l82.2,92.5c2,2,2.9,4.4,1.8,5.6c-1.2,1.1-3.8,0.5-5.9-1.4l-98.6-83.2   c-14.9,9.6-25.4,16.2-27.2,17.2c-7.7,3.9-13.1,4.4-20.5,4.4c-7.4,0-12.8-0.5-20.5-4.4c-1.9-1-12.3-7.6-27.2-17.2l-98.6,83.2   c-2,2-4.7,2.6-5.9,1.4c-1.2-1.1-0.3-3.6,1.7-5.6l82.1-92.5c-48.7-31.5-123.1-83.9-131.3-88.1c-8.8-4.5-9.3,0.8-9.3,4.9   c0,4.1,0,205,0,205c0,9.3,13.7,20.9,23.5,20.9H257h185.5c9.8,0,21.5-11.7,21.5-20.9c0,0,0-201,0-205   C464,153.9,464.6,148.7,455.7,153.2z"
+                    />
+                  </g>
+                </svg>
+                <span>hammadzaigham05@gmail.com</span></a
+              >
+            </li>
+            <li
+              class="[&]:text-right animate-slideUp opacity-0 [&>a]:translate-y-2 [&]:min-[0px]:max-lg:text-left"
+            >
+              <span class="block text-sm text-gray-600">Socials</span>
+              <a
+                class="inline-block mr-2"
+                href="https://www.linkedin.com/in/hammadzaigham05"
+                target="_blank"
+                style="transform: translateY(4px)"
+              >
+                <svg class="h-5 w-5" viewBox="0 0 256 256">
+                  <g
+                    style="
+                      stroke: none;
+                      stroke-width: 0;
+                      stroke-dasharray: none;
+                      stroke-linecap: butt;
+                      stroke-linejoin: miter;
+                      stroke-miterlimit: 10;
+                      fill: none;
+                      fill-rule: nonzero;
+                      opacity: 1;
+                    "
+                    transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+                  >
+                    <path
+                      d="M 1.48 29.91 h 18.657 v 60.01 H 1.48 V 29.91 z M 10.809 0.08 c 5.963 0 10.809 4.846 10.809 10.819 c 0 5.967 -4.846 10.813 -10.809 10.813 C 4.832 21.712 0 16.866 0 10.899 C 0 4.926 4.832 0.08 10.809 0.08"
+                      style="
+                        stroke: none;
+                        stroke-width: 1;
+                        stroke-dasharray: none;
+                        stroke-linecap: butt;
+                        stroke-linejoin: miter;
+                        stroke-miterlimit: 10;
+                        fill: rgb(0, 0, 0);
+                        fill-rule: nonzero;
+                        opacity: 1;
+                      "
+                      transform=" matrix(1 0 0 1 0 0) "
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M 31.835 29.91 h 17.89 v 8.206 h 0.255 c 2.49 -4.72 8.576 -9.692 17.647 -9.692 C 86.514 28.424 90 40.849 90 57.007 V 89.92 H 71.357 V 60.737 c 0 -6.961 -0.121 -15.912 -9.692 -15.912 c -9.706 0 -11.187 7.587 -11.187 15.412 V 89.92 H 31.835 V 29.91 z"
+                      style="
+                        stroke: none;
+                        stroke-width: 1;
+                        stroke-dasharray: none;
+                        stroke-linecap: butt;
+                        stroke-linejoin: miter;
+                        stroke-miterlimit: 10;
+                        fill: rgb(0, 0, 0);
+                        fill-rule: nonzero;
+                        opacity: 1;
+                      "
+                      transform=" matrix(1 0 0 1 0 0) "
+                      stroke-linecap="round"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <a
+                class="inline-block mr-2"
+                target="_blank"
+                href="https://twitter.com/hammadzaigham05"
+              >
+                <svg viewBox="0 0 248 204" xml:space="preserve" class="w-5 h-5">
+                  <g>
+                    <path
+                      d="M221.95,51.29c0.15,2.17,0.15,4.34,0.15,6.53c0,66.73-50.8,143.69-143.69,143.69v-0.04
+		C50.97,201.51,24.1,193.65,1,178.83c3.99,0.48,8,0.72,12.02,0.73c22.74,0.02,44.83-7.61,62.72-21.66
+		c-21.61-0.41-40.56-14.5-47.18-35.07c7.57,1.46,15.37,1.16,22.8-0.87C27.8,117.2,10.85,96.5,10.85,72.46c0-0.22,0-0.43,0-0.64
+		c7.02,3.91,14.88,6.08,22.92,6.32C11.58,63.31,4.74,33.79,18.14,10.71c25.64,31.55,63.47,50.73,104.08,52.76
+		c-4.07-17.54,1.49-35.92,14.61-48.25c20.34-19.12,52.33-18.14,71.45,2.19c11.31-2.23,22.15-6.38,32.07-12.26
+		c-3.77,11.69-11.66,21.62-22.2,27.93c10.01-1.18,19.79-3.86,29-7.95C240.37,35.29,231.83,44.14,221.95,51.29z"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <a
+                class="inline-block"
+                href="https://www.instagram.com/hammadzaigham05"
+                target="_blank"
+              >
+                <svg viewBox="0 0 122.88 122.88" class="h-5 w-5">
+                  <path
+                    d="M61.45,0C44.76,0,42.66.07,36.11.37A45.08,45.08,0,0,0,21.2,3.23a29.86,29.86,0,0,0-10.88,7.08,30.26,30.26,0,0,0-7.1,10.88A44.92,44.92,0,0,0,.37,36.11C.08,42.66,0,44.75,0,61.44S.07,80.21.37,86.77a45.08,45.08,0,0,0,2.86,14.91,30.12,30.12,0,0,0,7.08,10.88,30.13,30.13,0,0,0,10.88,7.1,45.17,45.17,0,0,0,14.92,2.85c6.55.3,8.64.37,25.33.37s18.77-.07,25.33-.37a45.17,45.17,0,0,0,14.92-2.85,31.54,31.54,0,0,0,18-18,45.6,45.6,0,0,0,2.86-14.91c.29-6.55.37-8.64.37-25.33s-.08-18.78-.37-25.33a45.66,45.66,0,0,0-2.86-14.92,30.1,30.1,0,0,0-7.09-10.88,29.77,29.77,0,0,0-10.88-7.08A45.14,45.14,0,0,0,86.76.37C80.2.07,78.12,0,61.43,0ZM55.93,11.07h5.52c16.4,0,18.34.06,24.82.36a34,34,0,0,1,11.41,2.11,19,19,0,0,1,7.06,4.6,19.16,19.16,0,0,1,4.6,7.06,34,34,0,0,1,2.11,11.41c.3,6.47.36,8.42.36,24.82s-.06,18.34-.36,24.82a33.89,33.89,0,0,1-2.11,11.4A20.35,20.35,0,0,1,97.68,109.3a33.64,33.64,0,0,1-11.41,2.12c-6.47.3-8.42.36-24.82.36s-18.35-.06-24.83-.36a34,34,0,0,1-11.41-2.12,19,19,0,0,1-7.07-4.59,19,19,0,0,1-4.59-7.06,34,34,0,0,1-2.12-11.41c-.29-6.48-.35-8.42-.35-24.83s.06-18.34.35-24.82a33.7,33.7,0,0,1,2.12-11.41,19,19,0,0,1,4.59-7.06,19.12,19.12,0,0,1,7.07-4.6A34.22,34.22,0,0,1,36.62,11.4c5.67-.25,7.86-.33,19.31-.34Zm38.31,10.2a7.38,7.38,0,1,0,7.38,7.37,7.37,7.37,0,0,0-7.38-7.37ZM61.45,29.89A31.55,31.55,0,1,0,93,61.44,31.56,31.56,0,0,0,61.45,29.89Zm0,11.07A20.48,20.48,0,1,1,41,61.44,20.48,20.48,0,0,1,61.45,41Z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <div
+        id="grades"
+        class="justify-around flex-1 h-full min-[0px]:max-lg:flex-col"
+      >
+        <aside
+          class="flex justify-center items-center flex-1 min-[0px]:max-lg:order-2"
+        >
+          <ul
+            class="[&>li]:mb-16 [&>li]:min-[0px]:max-lg:mb-16 [&_*]:min-[0px]:max-lg:text-center"
+          >
+            <li class="animate-slideUp opacity-0">
+              <span class="block text-sm text-gray-600">Sciences</span>
+              <span class="block">Chemistry - 3 Years</span>
+              <span class="block">Physics - 4 Years</span>
+              <span class="block">Computer Science - 4 Years</span>
+            </li>
+            <li class="animate-slideUp opacity-0">
+              <span class="block text-sm text-gray-600">Social Sciences</span>
+              <span class="block">History - 2 Years</span>
+              <span class="block">Islamiyat - 2 Years</span>
+              <span class="block">Economics - 1 Year</span>
+              <span class="block">Geography - 2 Years</span>
+            </li>
+            <li class="animate-slideUp opacity-0">
+              <span class="block text-sm text-gray-600">Languages</span>
+              <span class="block">Urdu - 2 Years</span>
+              <span class="block">English - 3 Years</span>
+            </li>
+            <li class="animate-slideUp opacity-0">
+              <span class="block text-sm text-gray-600">Computational</span>
+              <span class="block">Maths - 4 Years</span>
+            </li>
+          </ul>
+        </aside>
+        <section
+          class="flex justify-around items-center flex-col flex-1 min-[0px]:max-lg:mb-16"
+        >
+          <img
+            src="assets/dp.jpg"
+            alt=""
+            class="max-w-md max-h-[31rem] mt-6 outline outline-1 outline-offset-[1rem] outline-slate-300 animate-fadeIn min-[0px]:max-lg:w-[15rem] min-[0px]:max-lg:mt-8 min-[0px]:max-lg:mb-8 min-[0px]:max-lg:order-2 min-[768px]:max-lg:w-[17.5rem]"
+            style="border-radius: 11rem"
+            draggable="false"
+          />
+          <span class="animate-slideUp opacity-0 min-[0px]:max-lg:order-2">
+            <h1 class="text-3xl text-center">Hammad Ahmed</h1>
+            <h2 class="italic text-center text-gray-500">
+              Aspiring CS Engineer
+            </h2>
+          </span>
+          <nav
+            id="mainNav"
+            class="w-[95%] opacity-0 animate-slideUp min-[0px]:max-lg:order-1 min-[0px]:max-lg:mt-4 min-[768px]:max-lg:w-[50%] sm:max-md:w-[60%]"
+          >
+            <ul class="flex justify-around items-center">
+              <li
+                class="inline-block text-gray-600 cursor-pointer relative before:bg-gray-500 before:w-full before:h-px before:absolute before:bottom-0 before:origin-center"
+                onclick="activateTab('info')"
+              >
+                Info
+              </li>
+              <li
+                class="active inline-block text-gray-600 cursor-pointer relative before:bg-gray-500 before:w-full before:h-px before:absolute before:bottom-0 before:origin-center"
+                onclick="activateTab('grades')"
+              >
+                Grades
+              </li>
+              <li
+                class="inline-block text-gray-600 cursor-pointer relative before:bg-gray-500 before:w-full before:h-px before:absolute before:bottom-0 before:origin-center"
+                onclick="activateTab('extracurriculars')"
+              >
+                Extracurriculars
+              </li>
+              <li
+                class="inline-block text-gray-600 cursor-pointer relative before:bg-gray-500 before:w-full before:h-px before:absolute before:bottom-0 before:origin-center"
+                onclick="activateTab('hobbies')"
+              >
+                Hobbies
+              </li>
+            </ul>
+          </nav>
+        </section>
+        <aside
+          class="flex justify-center items-center flex-1 min-[0px]:max-lg:order-2"
+        >
+          <ul
+            class="[&>li]:mb-24 [&>li]:min-[0px]:max-lg:mb-16 [&_*]:min-[0px]:max-lg:text-center"
+          >
+            <li class="[&]:text-right animate-slideUp opacity-0">
+              <span class="block text-sm text-gray-600">O-Levels</span>
+              <span>7 A*, 1 A</span>
+            </li>
+            <li class="[&]:text-right animate-slideUp opacity-0">
+              <span class="block text-sm text-gray-600">AS-Level</span>
+              <span>4 A</span>
+            </li>
+            <li class="[&]:text-right animate-slideUp opacity-0">
+              <span class="block text-sm text-gray-600">SAT</span>
+              <span>1520</span>
+            </li>
+            <li class="[&]:text-right animate-slideUp opacity-0">
+              <span class="block text-sm text-gray-600">IELTS</span>
+              <span class="block">Soon</span>
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <div
+        id="extracurriculars"
+        class="flex-col-reverse items-center h-full pt-4 min-[0px]:max-lg:pt-0 min-[0px]:max-lg:px-0 pb-[19px] min-[0px]:max-lg:pb-0 px-16 min-[0px]:max-lg:flex-col [&_article]:min-[0px]:max-lg:mx-6 [&_article]:min-[0px]:max-lg:mb-8"
+      >
+        <nav
+          id="mainNav"
+          class="min-[0px]:max-lg:order-1 max-w-[438px] min-[0px]:max-md:w-[95%] min-[0px]:max-lg:mb-4 opacity-0 animate-slideUp min-[0px]:max-lg:mt-4 min-[768px]:w-[50%] sm:max-md:w-[60%]"
+        >
+          <ul class="flex justify-around items-center">
+            <li
+              class="inline-block text-gray-600 cursor-pointer relative before:bg-gray-500 before:w-full before:h-px before:absolute before:bottom-0 before:origin-center"
+              onclick="activateTab('info')"
+            >
+              Info
+            </li>
+            <li
+              class="inline-block text-gray-600 cursor-pointer relative before:bg-gray-500 before:w-full before:h-px before:absolute before:bottom-0 before:origin-center"
+              onclick="activateTab('grades')"
+            >
+              Grades
+            </li>
+            <li
+              class="active inline-block text-gray-600 cursor-pointer relative before:bg-gray-500 before:w-full before:h-px before:absolute before:bottom-0 before:origin-center"
+              onclick="activateTab('extracurriculars')"
+            >
+              Extracurriculars
+            </li>
+            <li
+              class="inline-block text-gray-600 cursor-pointer relative before:bg-gray-500 before:w-full before:h-px before:absolute before:bottom-0 before:origin-center"
+              onclick="activateTab('hobbies')"
+            >
+              Hobbies
+            </li>
+          </ul>
+        </nav>
+        <span style="min-height: 5rem; width: 100%"></span>
+        <section
+          class="flex opacity-0 animate-slideUp min-[0px]:max-lg:order-2 min-[0px]:max-lg:flex-col"
+        >
+          <article
+            class="scale-[0.85] max-w-[50%] min-[0px]:max-lg:max-w-full min-[0px]:max-lg:scale-100 mr-4 min-[0px]:max-lg:mr-0 p-4 shadow-lg relative before:w-full before:h-full before:absolute before:top-0 before:left-0 before:shadow-spread before:opacity-0 before:hover:opacity-100"
+          >
+            <h4 class="prevent-select">Model United Nations [MUN]</h4>
+            <br />
+            <p class="prevent-select">
+              Attending the MUN was an eye-opening experience. Representing my
+              assigned country, I engaged in debates and negotiations, honing my
+              public speaking skills. Collaborating with diverse delegates
+              broadened my perspective, fostering diplomacy and teamwork. The
+              MUN equipped me with critical thinking abilities, research
+              prowess, and a deeper appreciation for global affairs.
+              Undoubtedly, it was a rewarding journey of personal growth and
+              international awareness.
+            </p>
+          </article>
+          <article
+            class="scale-[0.95] max-w-[50%] min-[0px]:max-lg:scale-100 min-[0px]:max-lg:max-w-full mr-4 min-[0px]:max-lg:mr-0 p-4 shadow-lg relative before:w-full before:h-full before:absolute before:top-0 before:left-0 before:shadow-spread before:opacity-0 before:hover:opacity-100"
+          >
+            <h4 class="prevent-select">Internship</h4>
+            <br />
+            <p class="prevent-select">
+              During my enriching Computer Science Internship, I honed my coding
+              prowess and problem-solving skills, equipping me to write more
+              efficient and robust code. Moreover, I gained invaluable insights
+              into the inner workings of a CS business, understanding its
+              day-to-day operations and the key factors that contribute to its
+              success. This experience has significantly augmented my practical
+              knowledge and prepared me for a promising future in the tech
+              industry.
+            </p>
+          </article>
+        </section>
+        <span style="min-height: 3rem; width: 100%"></span>
+        <section
+          class="flex opacity-0 animate-slideUp min-[0px]:max-lg:order-2 min-[0px]:max-lg:flex-col"
+        >
+          <article
+            class="scale-[0.95] max-w-[48.5%] min-w-[48.5%] min-[0px]:max-lg:min-w-0 min-[0px]:max-lg:max-w-full min-[0px]:max-lg:scale-100 min-[0px]:max-lg:mr-0 p-4 shadow-lg relative before:w-full before:h-full before:absolute before:top-0 before:left-0 before:shadow-spread before:opacity-0 before:hover:opacity-100"
+          >
+            <h4 class="prevent-select">Blog</h4>
+            <a
+              href="https://wiredwizards.wixsite.com/site"
+              target="_blank"
+              style="color: #0167ad"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                style="display: inline; transform: translateY(-2px)"
+              >
+                <path
+                  fill="#0167ad"
+                  d="M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-1.311 1.311-3.44 1.3-4.74 0-.303-.303-.564-.68-.727-1.051l-2.246 2.245c.236.358.481.667.796.982.812.812 1.846 1.417 3.036 1.704 1.542.371 3.194.166 4.613-.617.518-.286 1.005-.648 1.444-1.087l4.304-4.305c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z"
+                />
+              </svg>
+              <span>Wired Wizards</span>
+            </a>
+            <p class="prevent-select">
+              My twin and I created a tech blog to keep people informed and
+              educated about the latest happenings in the tech world.
+              <br />
+              The mission is to provide a space for our readers to learn,
+              explore, and discover the world of technology. We strive to keep
+              our content informative, interesting, and entertaining so that our
+              readers can get the most out of their time on our blog.
+            </p>
+          </article>
+          <article
+            class="scale-[0.85] min-[0px]:max-lg:scale-100 mr-4 min-[0px]:max-lg:mr-0 p-4 shadow-lg relative before:w-full before:h-full before:absolute before:top-0 before:left-0 before:shadow-spread before:opacity-0 before:hover:opacity-100"
+          >
+            <h4 class="prevent-select">International Dataviz Challenge 2022</h4>
+            <a
+              class="cursor-pointer"
+              onclick="displayImg()"
+              style="color: #0167ad"
+            >
+              <svg
+                class="inline-block h-4 w-4 translate-y-[-2px]"
+                viewBox="0 -2 20 20"
+                fill="#0167ad"
+              >
+                <g stroke-width="0"></g>
+                <g
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke="#CCCCCC"
+                  stroke-width="0.36"
+                ></g>
+                <g>
+                  <g
+                    id="Page-1"
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                  >
+                    <g
+                      id="Dribbble-Light-Preview"
+                      transform="translate(-420.000000, -3881.000000)"
+                      fill="#0167ad"
+                    >
+                      <g
+                        id="icons"
+                        transform="translate(56.000000, 160.000000)"
+                      >
+                        <path
+                          d="M376.083,3725.667 C376.083,3724.562 376.978,3723.667 378.083,3723.667 C379.188,3723.667 380.083,3724.562 380.083,3725.667 C380.083,3726.772 379.188,3727.667 378.083,3727.667 C376.978,3727.667 376.083,3726.772 376.083,3725.667 L376.083,3725.667 Z M382,3733.086 L377.987,3729.074 L377.971,3729.089 L377.955,3729.074 L376.525,3730.504 L371.896,3725.876 L371.881,3725.892 L371.865,3725.876 L366,3731.741 L366,3723 L382,3723 L382,3733.086 Z M364,3737 L384,3737 L384,3721 L364,3721 L364,3737 Z"
+                          id="image_picture-[#0167ad]"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <span>Image</span>
+            </a>
+            <p class="prevent-select">
+              During the competition, we crafted compelling infographics
+              showcasing the 'Impact of COVID-19 on Business.' Our data-driven
+              storytelling approach aimed to raise awareness about the
+              pandemic's effects and its implications for a sustainable future.
+              As a result, I not only refined my skills in data analysis,
+              design, and storytelling but also contributed to the collective
+              effort of promoting a more sustainable world.
+              #DataVizChallenge2022
+            </p>
+          </article>
+        </section>
+      </div>
+      <div
+        id="hobbies"
+        class="justify-end flex-col h-full min-[0px]:max-lg:justify-center"
+      >
+        <section
+          class="flex items-stretch [&>section]:min-w-full overflow-hidden min-[0px]:max-lg:order-3 [&>section]:min-[0px]:max-lg:flex-col [&_img]:min-[0px]:max-lg:mr-0 [&_p]:min-[0px]:max-lg:mb-8 [&_p]:min-[0px]:max-lg:text-center [&_img]:min-[640px]:max-md:max-w-lg [&_img]:min-[500px]:max-sm:max-w-md [&_img]:min-[430px]:max-[500px]:max-w-sm [&_img]:min-[0px]:max-[430px]:max-w-xs"
+        >
+          <section
+            id="photography"
+            class="active items-center px-16 opacity-0 animate-slideUp"
+          >
+            <img src="assets/photography.jpg" alt="" class="max-w-xl mr-16" />
+            <aside class="flex justify-center items-center flex-col">
+              <h1 class="text-lg my-4 text-center">Photography</h1>
+              <p>
+                My love for photography goes beyond capturing mere images; it's
+                a passionate journey of freezing moments in time. Through the
+                lens, we become storytellers, preserving the memories of life
+                unfolding around us. Each click immortalizes emotions, places,
+                and faces, holding them dear for eternity. Photography not only
+                lets us relive cherished moments but also allows us to share our
+                unique perspective with the world, fostering a deep connection
+                with others. In this art, we find solace, joy, and an
+                indescribable thrill, as every frame encapsulates the essence of
+                the ever-evolving world we call home.
+              </p>
+            </aside>
+          </section>
+          <section
+            id="coding"
+            class="items-center px-16 opacity-0 animate-slideUp"
+          >
+            <img src="assets/coding.jpg" alt="" class="max-w-xl mr-16" />
+            <aside class="flex justify-center items-center flex-col">
+              <h1 class="text-lg my-4 text-center">Coding</h1>
+              <p>
+                Coding ignites a creative fire within, a powerful tool to craft
+                wonders in the digital realm. It's problem-solving at its
+                finest, unraveling complex challenges with logic and precision.
+                Each line of code becomes a stroke of art, crafting brilliant
+                designs that breathe life into imagination. With coding, ideas
+                take shape, and innovation thrives. The satisfaction of building
+                functional, elegant solutions from scratch is unparalleled. It's
+                a journey of continuous learning, growth, and self-discovery. In
+                this realm of ones and zeros, the possibilities are limitless,
+                and the power to shape the future lies at the fingertips of
+                those who embrace the beauty of coding.
+              </p>
+            </aside>
+          </section>
+          <section
+            id="weightlifting"
+            class="items-center px-16 opacity-0 animate-slideUp"
+          >
+            <img src="assets/weightlifting.jpg" alt="" class="max-w-xl mr-16" />
+            <aside class="flex justify-center items-center flex-col">
+              <h1 class="text-lg my-4 text-center">Weightlifting</h1>
+              <p>
+                Weightlifting is a transformative journey that enriches both
+                body and mind. It's a gateway to robust health, as the intense
+                workouts strengthen muscles, bones, and joints. The sweat-soaked
+                sessions not only sculpt a chiseled physique but also bolster
+                confidence and discipline. Feeling the power surge through each
+                lift is addictive - witnessing the gradual progression, as
+                once-difficult weights become effortless, is awe-inspiring.
+                Weightlifting instills a sense of accomplishment and
+                empowerment, both inside and out. Embracing this passion, one
+                becomes a living testament to the wonders of physical and mental
+                growth, reaping the rewards of dedication and the pursuit of
+                excellence.
+              </p>
+            </aside>
+          </section>
+          <section
+            id="videogames"
+            class="items-center px-16 opacity-0 animate-slideUp"
+          >
+            <img src="assets/videogames.jpg" alt="" class="max-w-xl mr-16" />
+            <aside class="flex justify-center items-center flex-col">
+              <h1 class="text-lg my-4 text-center">Video Games</h1>
+              <p>
+                Video games are a captivating odyssey into virtual realms that
+                mirror reality with uncanny fidelity. High-definition graphics
+                transport players to breathtakingly lifelike landscapes,
+                blurring the lines between fiction and truth. Within these
+                digital domains, we embark on epic adventures, unlocking worlds
+                within worlds that spark boundless wonder and curiosity.
+                Engrossing storylines unfold, immersing us in gripping
+                narratives filled with emotion and depth. From breathtakingly
+                realistic simulations to fantastical escapades, video games
+                become portals to boundless creativity and interactivity. The
+                joy of exploration, the thrill of competition, and the
+                camaraderie of multiplayer experiences forge an unforgettable
+                connection, making gaming an enthralling realm where the
+                possibilities are as limitless as the human imagination.
+              </p>
+            </aside>
+          </section>
+          <section
+            id="movies"
+            class="items-center px-16 opacity-0 animate-slideUp"
+          >
+            <img src="assets/movies.jpg" alt="" class="max-w-xl mr-16" />
+            <aside class="flex justify-center items-center flex-col">
+              <h1 class="text-lg my-4 text-center">Watching Movies</h1>
+              <p>
+                Watching movies is an enchanting affair, as captivating
+                storylines unfold on the screen. From heartwarming tales to
+                gripping dramas, they resonate with the depths of human emotion.
+                The art of cinematography mesmerizes, painting vivid pictures
+                that transport us to different worlds. Each frame is a work of
+                art, crafting visual poetry. Beyond entertainment, movies offer
+                profound life lessons, fostering empathy, resilience, and
+                self-discovery. They serve as mirrors to our own experiences,
+                teaching us, inspiring us, and leaving an indelible mark on our
+                souls. The magic of movies lies in their ability to ignite our
+                imagination, touch our hearts, and remind us of the shared
+                essence of humanity.
+              </p>
+            </aside>
+          </section>
+        </section>
+        <span style="min-height: 7rem; width: 100%"></span>
+        <div
+          class="flex justify-center items-center min-[0px]:max-lg:order-2 min-[0px]:max-lg:mb-2"
+        >
+          <ul
+            id="roundedNav"
+            class="h-8 [&>li]:cursor-pointer [&>li]:opacity-0 [&>li]:inline-block [&>li]:w-[9px] [&>li]:h-[9px] [&>li]:rounded-full [&>li]:outline [&>li]:animate-slideUp"
+          >
+            <li class="active mr-6" onclick="activateHobby('photography')"></li>
+            <li class="mr-6" onclick="activateHobby('coding')"></li>
+            <li class="mr-6" onclick="activateHobby('weightlifting')"></li>
+            <li class="mr-6" onclick="activateHobby('videogames')"></li>
+            <li onclick="activateHobby('movies')"></li>
+          </ul>
+        </div>
+        <span style="min-height: 0.5rem; width: 100%"></span>
+        <nav
+          id="mainNav"
+          class="flex items-center justify-center min-[0px]:max-lg:order-1 min-[0px]:max-md:w-[95%] min-[0px]:max-lg:mb-4 opacity-0 animate-slideUp min-[0px]:max-lg:mt-4"
+        >
+          <ul
+            class="flex justify-around items-center min-[768px]:w-[50%] max-w-[438px] min-[0px]:w-[100%] sm:max-md:w-[60%]"
+          >
+            <li
+              class="inline-block text-gray-600 cursor-pointer relative before:bg-gray-500 before:w-full before:h-px before:absolute before:bottom-0 before:origin-center"
+              onclick="activateTab('info')"
+            >
+              Info
+            </li>
+            <li
+              class="inline-block text-gray-600 cursor-pointer relative before:bg-gray-500 before:w-full before:h-px before:absolute before:bottom-0 before:origin-center"
+              onclick="activateTab('grades')"
+            >
+              Grades
+            </li>
+            <li
+              class="inline-block text-gray-600 cursor-pointer relative before:bg-gray-500 before:w-full before:h-px before:absolute before:bottom-0 before:origin-center"
+              onclick="activateTab('extracurriculars')"
+            >
+              Extracurriculars
+            </li>
+            <li
+              class="active inline-block text-gray-600 cursor-pointer relative before:bg-gray-500 before:w-full before:h-px before:absolute before:bottom-0 before:origin-center"
+              onclick="activateTab('hobbies')"
+            >
+              Hobbies
+            </li>
+          </ul>
+        </nav>
+        <span style="min-height: 1.25rem; width: 100%"></span>
+      </div>
+    </main>
+    <div
+      id="imgDisplay"
+      class="fixed top-0 left-0 w-full h-full z-20 items-center justify-center flex-col bg-white"
+      onclick="displayImg()"
+    >
+      <div class="flex justify-end w-full">
+        <button
+          class="fixed top-0 right-0 min-h-[2rem] min-w-[2rem] flex justify-center items-center bg-white rounded box-border"
+          type="button"
+        >
+          <svg width="60" height="60" viewBox="0 0 60 60">
+            <g fill="none" fill-rule="evenodd">
+              <path
+                fill="#2F2E2E"
+                d="M42.188 17l.812.813L30.812 30 43 42.188l-.813.812L30 30.812 17.812 43 17 42.187 29.187 30 17 17.812l.813-.812L30 29.187 42.188 17z"
+              ></path>
+            </g>
+          </svg>
+        </button>
+      </div>
+      <img
+        src="assets/COVID-19 Impact.svg"
+        alt="Impact of COVID-19 on Business"
+        class="max-h-[95%] object-fill"
+      />
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
