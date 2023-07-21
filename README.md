@@ -1,2 +1,2 @@
 # Personal Portfolio
-Createdd by Hammad Ahmed
+Created by Hammad Ahmed
