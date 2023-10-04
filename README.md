@@ -8,3 +8,5 @@
 **JavaScript** for adding interactivity and dynamic behavior into the webpage, allowing for real-time responses to user actions and enabling a more engaging user experience.
 
 **Visual Studio** Code as the IDE, facilitating efficient code writing and enhancing productivity throughout the entire development cycle.
+
+***Crafted in every aspect by Hammad Ahmed***
