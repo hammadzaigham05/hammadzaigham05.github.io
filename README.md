@@ -1,4 +1,4 @@
-#[Personal Portfolio](https://hammadzaigham05.github.io/)
+# [Personal Portfolio](https://hammadzaigham05.github.io/)
 **HTML** serves as the fundamental building block of a webpage, defining its structure and content. Used for organizing elements and establishing the basic framework for the entire webpage.
 
 **CSS** handles styling and formatting of the HTML elements, enhancing the visual appeal of the webpage and ensuring a polished, cohesive look.
