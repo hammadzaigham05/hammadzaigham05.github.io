@@ -32,9 +32,11 @@
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
 6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
 */
 
-html {
+html,
+:host {
   line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -50,6 +52,8 @@ html {
   /* 5 */
   font-variation-settings: normal;
   /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
 }
 
 /*
@@ -121,8 +125,10 @@ strong {
 }
 
 /*
-1. Use the user's configured `mono` font family by default.
-2. Correct the odd `em` font sizing in all browsers.
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
 */
 
 code,
@@ -131,8 +137,12 @@ samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
-  font-size: 1em;
+  font-feature-settings: normal;
   /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
 }
 
 /*
@@ -534,6 +544,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .fixed {
   position: fixed;
 }
@@ -587,10 +601,6 @@ video {
   margin-top: 1.5rem;
 }
 
-.mr-8 {
-  margin-right: 2rem;
-}
-
 .box-border {
   box-sizing: border-box;
 }
@@ -619,10 +629,6 @@ video {
   height: 1.25rem;
 }
 
-.h-6 {
-  height: 1.5rem;
-}
-
 .h-8 {
   height: 2rem;
 }
@@ -635,20 +641,8 @@ video {
   height: 100%;
 }
 
-.h-3 {
-  height: 0.75rem;
-}
-
 .max-h-\[31rem\] {
   max-height: 31rem;
-}
-
-.max-h-\[90\%\] {
-  max-height: 90%;
-}
-
-.max-h-\[100\%\] {
-  max-height: 100%;
 }
 
 .max-h-\[95\%\] {
@@ -667,10 +661,6 @@ video {
   width: 1.25rem;
 }
 
-.w-6 {
-  width: 1.5rem;
-}
-
 .w-\[95\%\] {
   width: 95%;
 }
@@ -679,20 +669,8 @@ video {
   width: 100%;
 }
 
-.w-8 {
-  width: 2rem;
-}
-
-.w-3 {
-  width: 0.75rem;
-}
-
 .min-w-\[2rem\] {
   min-width: 2rem;
-}
-
-.min-w-\[50\%\] {
-  min-width: 50%;
 }
 
 .min-w-\[48\.5\%\] {
@@ -701,6 +679,10 @@ video {
 
 .max-w-\[438px\] {
   max-width: 438px;
+}
+
+.max-w-\[48\.5\%\] {
+  max-width: 48.5%;
 }
 
 .max-w-\[50\%\] {
@@ -715,38 +697,8 @@ video {
   max-width: 36rem;
 }
 
-.max-w-\[45\%\] {
-  max-width: 45%;
-}
-
-.max-w-\[48\%\] {
-  max-width: 48%;
-}
-
-.max-w-\[49\%\] {
-  max-width: 49%;
-}
-
-.max-w-\[48\.5\%\] {
-  max-width: 48.5%;
-}
-
-.max-w-\[30\%\] {
-  max-width: 30%;
-}
-
 .flex-1 {
   flex: 1 1 0%;
-}
-
-.-translate-y-1 {
-  --tw-translate-y: -0.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-y-1 {
-  --tw-translate-y: 0.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .translate-y-\[-2px\] {
@@ -848,10 +800,6 @@ video {
 .object-fill {
   -o-object-fit: fill;
      object-fit: fill;
-}
-
-.p-2 {
-  padding: 0.5rem;
 }
 
 .p-4 {
@@ -993,6 +941,10 @@ img {
   -moz-user-select: none;
        user-select: none;
   /* Standard syntax */
+}
+
+.quickfix {
+  transform: translateY(1.25rem);
 }
 
 /* Image Display */
@@ -1174,10 +1126,6 @@ img {
       width: 15rem;
     }
 
-    .min-\[0px\]\:max-lg\:min-w-full {
-      min-width: 100%;
-    }
-
     .min-\[0px\]\:max-lg\:min-w-0 {
       min-width: 0px;
     }
@@ -1217,6 +1165,15 @@ img {
   @media not all and (min-width: 768px) {
     .min-\[0px\]\:max-md\:w-\[95\%\] {
       width: 95%;
+    }
+
+    .min-\[0px\]\:max-md\:w-full {
+      width: 100%;
+    }
+
+    .min-\[0px\]\:max-md\:translate-y-0 {
+      --tw-translate-y: 0px;
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
     }
   }
 }
