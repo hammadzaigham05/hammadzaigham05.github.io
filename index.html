@@ -1,11 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
-    <link href="style.css" rel="stylesheet" />
-    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../assets/favicon.ico"
+    />
   </head>
   <body
     class="flex justify-center items-center inset-0 h-[100vh] min-[0px]:max-lg:h-full"
@@ -64,7 +68,7 @@
           class="flex justify-around items-center flex-col flex-1 min-[0px]:max-lg:mb-16"
         >
           <img
-            src="assets/dp.jpg"
+            src="../assets/dp.jpg"
             alt=""
             class="max-w-md max-h-[31rem] mt-6 outline outline-1 outline-offset-[1rem] outline-slate-300 animate-fadeIn min-[0px]:max-lg:w-[15rem] min-[0px]:max-lg:mt-8 min-[0px]:max-lg:mb-8 min-[0px]:max-lg:order-2 min-[768px]:max-lg:w-[17.5rem]"
             style="border-radius: 11rem"
@@ -289,7 +293,7 @@
           class="flex justify-around items-center flex-col flex-1 min-[0px]:max-lg:mb-16"
         >
           <img
-            src="assets/dp.jpg"
+            src="../assets/dp.jpg"
             alt=""
             class="max-w-md max-h-[31rem] mt-6 outline outline-1 outline-offset-[1rem] outline-slate-300 animate-fadeIn min-[0px]:max-lg:w-[15rem] min-[0px]:max-lg:mt-8 min-[0px]:max-lg:mb-8 min-[0px]:max-lg:order-2 min-[768px]:max-lg:w-[17.5rem]"
             style="border-radius: 11rem"
@@ -353,7 +357,7 @@
             </li>
             <li class="[&]:text-right animate-slideUp opacity-0">
               <span class="block text-sm text-gray-600">IELTS</span>
-              <span class="block">8.0 Bands</span>
+              <span class="block">Soon</span>
             </li>
           </ul>
         </aside>
@@ -361,6 +365,7 @@
       <div
         id="extracurriculars"
         class="flex-col-reverse items-center h-full pt-4 min-[0px]:max-lg:pt-0 min-[0px]:max-lg:px-0 pb-[19px] min-[0px]:max-lg:pb-0 px-16 min-[0px]:max-lg:flex-col [&_article]:min-[0px]:max-lg:mx-6 [&_article]:min-[0px]:max-lg:mb-8"
+        style="justify-content: space-around"
       >
         <nav
           id="mainNav"
@@ -393,7 +398,6 @@
             </li>
           </ul>
         </nav>
-        <span style="min-height: 5rem; width: 100%"></span>
         <section
           class="flex opacity-0 animate-slideUp min-[0px]:max-lg:order-2 min-[0px]:max-lg:flex-col"
         >
@@ -430,7 +434,6 @@
             </p>
           </article>
         </section>
-        <span style="min-height: 3rem; width: 100%"></span>
         <section
           class="flex opacity-0 animate-slideUp min-[0px]:max-lg:order-2 min-[0px]:max-lg:flex-col"
         >
@@ -527,19 +530,27 @@
             </p>
           </article>
         </section>
+        <span style="min-height: 2rem; width: 100%"></span>
       </div>
       <div
         id="hobbies"
         class="justify-end flex-col h-full min-[0px]:max-lg:justify-center"
+        style="justify-content: space-around"
       >
+        <span style="min-height: 3rem; width: 100%"></span>
         <section
           class="flex items-stretch [&>section]:min-w-full overflow-hidden min-[0px]:max-lg:order-3 [&>section]:min-[0px]:max-lg:flex-col [&_img]:min-[0px]:max-lg:mr-0 [&_p]:min-[0px]:max-lg:mb-8 [&_p]:min-[0px]:max-lg:text-center [&_img]:min-[640px]:max-md:max-w-lg [&_img]:min-[500px]:max-sm:max-w-md [&_img]:min-[430px]:max-[500px]:max-w-sm [&_img]:min-[0px]:max-[430px]:max-w-xs"
+          style="max-height: 30%; overflow: visible"
         >
           <section
             id="photography"
             class="active items-center px-16 opacity-0 animate-slideUp"
           >
-            <img src="assets/photography.jpg" alt="" class="max-w-xl mr-16" />
+            <img
+              src="../assets/photography.jpg"
+              alt=""
+              class="max-w-xl mr-16"
+            />
             <aside class="flex justify-center items-center flex-col">
               <h1 class="text-lg my-4 text-center">Photography</h1>
               <p>
@@ -560,7 +571,7 @@
             id="coding"
             class="items-center px-16 opacity-0 animate-slideUp"
           >
-            <img src="assets/coding.jpg" alt="" class="max-w-xl mr-16" />
+            <img src="../assets/coding.jpg" alt="" class="max-w-xl mr-16" />
             <aside class="flex justify-center items-center flex-col">
               <h1 class="text-lg my-4 text-center">Coding</h1>
               <p>
@@ -582,7 +593,11 @@
             id="weightlifting"
             class="items-center px-16 opacity-0 animate-slideUp"
           >
-            <img src="assets/weightlifting.jpg" alt="" class="max-w-xl mr-16" />
+            <img
+              src="../assets/weightlifting.jpg"
+              alt=""
+              class="max-w-xl mr-16"
+            />
             <aside class="flex justify-center items-center flex-col">
               <h1 class="text-lg my-4 text-center">Weightlifting</h1>
               <p>
@@ -605,7 +620,7 @@
             id="videogames"
             class="items-center px-16 opacity-0 animate-slideUp"
           >
-            <img src="assets/videogames.jpg" alt="" class="max-w-xl mr-16" />
+            <img src="../assets/videogames.jpg" alt="" class="max-w-xl mr-16" />
             <aside class="flex justify-center items-center flex-col">
               <h1 class="text-lg my-4 text-center">Video Games</h1>
               <p>
@@ -630,7 +645,7 @@
             id="movies"
             class="items-center px-16 opacity-0 animate-slideUp"
           >
-            <img src="assets/movies.jpg" alt="" class="max-w-xl mr-16" />
+            <img src="../assets/movies.jpg" alt="" class="max-w-xl mr-16" />
             <aside class="flex justify-center items-center flex-col">
               <h1 class="text-lg my-4 text-center">Watching Movies</h1>
               <p>
@@ -650,26 +665,29 @@
             </aside>
           </section>
         </section>
-        <span style="min-height: 7rem; width: 100%"></span>
-        <div
-          class="flex justify-center items-center min-[0px]:max-lg:order-2 min-[0px]:max-lg:mb-2"
-        >
-          <ul
-            id="roundedNav"
-            class="h-8 [&>li]:cursor-pointer [&>li]:opacity-0 [&>li]:inline-block [&>li]:w-[9px] [&>li]:h-[9px] [&>li]:rounded-full [&>li]:outline [&>li]:animate-slideUp"
-          >
-            <li class="active mr-6" onclick="activateHobby('photography')"></li>
-            <li class="mr-6" onclick="activateHobby('coding')"></li>
-            <li class="mr-6" onclick="activateHobby('weightlifting')"></li>
-            <li class="mr-6" onclick="activateHobby('videogames')"></li>
-            <li onclick="activateHobby('movies')"></li>
-          </ul>
-        </div>
-        <span style="min-height: 0.5rem; width: 100%"></span>
         <nav
           id="mainNav"
           class="flex items-center justify-center min-[0px]:max-lg:order-1 min-[0px]:max-md:w-full min-[0px]:max-lg:mb-4 opacity-0 animate-slideUp min-[0px]:max-lg:mt-4"
+          style="flex-direction: column"
         >
+          <div
+            class="flex justify-center items-center min-[0px]:max-lg:order-2 min-[0px]:max-lg:mb-2"
+            style="margin-bottom: 0.5rem"
+          >
+            <ul
+              id="roundedNav"
+              class="h-8 [&>li]:cursor-pointer [&>li]:opacity-0 [&>li]:inline-block [&>li]:w-[9px] [&>li]:h-[9px] [&>li]:rounded-full [&>li]:outline [&>li]:animate-slideUp"
+            >
+              <li
+                class="active mr-6"
+                onclick="activateHobby('photography')"
+              ></li>
+              <li class="mr-6" onclick="activateHobby('coding')"></li>
+              <li class="mr-6" onclick="activateHobby('weightlifting')"></li>
+              <li class="mr-6" onclick="activateHobby('videogames')"></li>
+              <li onclick="activateHobby('movies')"></li>
+            </ul>
+          </div>
           <ul
             class="flex justify-around items-center min-[768px]:w-[50%] max-w-[438px] min-[0px]:w-[100%] sm:max-md:w-[60%]"
           >
@@ -699,7 +717,6 @@
             </li>
           </ul>
         </nav>
-        <span style="min-height: 1.25rem; width: 100%"></span>
       </div>
     </main>
     <div
@@ -723,7 +740,7 @@
         </button>
       </div>
       <img
-        src="assets/COVID-19 Impact.svg"
+        src="../assets/COVID-19 Impact.svg"
         alt="Impact of COVID-19 on Business"
         class="max-h-[95%] object-fill"
       />
